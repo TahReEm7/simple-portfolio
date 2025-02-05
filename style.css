@@ -96,7 +96,7 @@ header ul li a:hover {
     cursor: pointer;
 }
 .box-icon > p:hover {
-    color: rgba(4, 58, 55, 0.382);
+    color: skyblue;
     box-shadow: 0 0 15px  rgba(211, 211, 211, 0.249);
 }
 /* Header end */
@@ -123,21 +123,75 @@ header ul li a:hover {
 
 
 /* hero section */
-.hero {
+/* .hero {
     position: absolute;
     top: 250px;
-    left: 220px;
+    left: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    gap: 200px;
+    gap: 100px;
     z-index: 1;
-}
-.hero-img {
-    width: 500px;
-
-}
-.hero-img > img {
+    text-align: start;
+} */
+.hero {
+    position: relative;
+    display: flex;
     width: 100%;
+    height: 80vh;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero-info {
+    position: absolute;
+    left: 5%;
+}
+.hero-name {
+    color: #72a1de;
+    padding: 5px 8px;
+    border-radius: 10px;
+    border: 1px solid #72a1de94;
+    width: 310px;
+    background-color: #2200493d;
+    box-shadow: 0 0 5px #72a1de;
+}
+.hero-title {
+    font-size: 60px;
+    max-width: 600px;
+    font-weight: 700;
+    line-height: 60px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.hero-sub {
+    font-size: 20px;
+    max-width: 750px;
+    line-height: 25px;
+    margin-bottom: 40px;
+}
+.btn {
+    color: white;
+    font-size: 20px;
+    padding: 10px 35px;
+    border-radius: 10px;
+    border: 1px solid #72a1de81;
+    background-color: #2200493d;
+    box-shadow: 0 0 5px #72a1de;
+    cursor: pointer;
+}
+.btn:hover {
+   box-shadow: 0 0 15px #72a1de81 ;
+}
+.gradient {
+    background-image: linear-gradient(to right , #008baa, #7e43a7, #6600c6, #6070fd, #0099ff, #008ead);
+    background-clip: text;
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 2.5s linear infinite;
+}
+@keyframes animate-gradient {
+    to {
+        background-position: 200%;
+    }
 }
