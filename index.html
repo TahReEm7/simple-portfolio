@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <link rel="stylesheet" href="style.css">
 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -16,10 +18,10 @@
         <header>
             <div class="logo">
                 <!-- <img src="" alt="Logo"> -->
-                <h2 class="logo-name"><span class="purple">Tah</span><Span class="blue">Re</Span><span class="purple">Em</span></h2>
+                <h2 class="logo-name gradient"><span class="purple">Tah</span><Span class="blue">Re</Span><span class="purple">Em</span></h2>
             </div>
     
-                <ul>
+                <ul class="hidden">
                     <li><a href="#">About</a></li>
                     <li><a href="#">Skills</a></li>
                     <li><a href="#">Projects</a></li>
@@ -37,24 +39,79 @@
             <video class="blackhole" loop muted autoplay plays-inline src="./videos/blackhole.mp4"></video>
         </div>
         <!-- Main section -->
-        <main>
+     <main>
             <!-- hero section -->
-             <section class="hero">
+         <section class="hero">
                 <div class="hero-info">
-                    <p class="hero-name">Tahreem Hossain – Front-End Developer</p>
+                    <p class="hero-name"><i class='bx bx-devices gradient' ></i> Tahreem Hossain – Front-End Developer</p>
                     <h1 class="hero-title">Providing <span class="gradient">the best</span> <br> user <span  class="gradient">experience</span></h1>
                     <p class="hero-sub"> I create responsive, user-friendly web applications  with a focus on performance and accessibility.Always eager to learn and explore new technologies <br> to enhance UI/UX experiences.</p>
-                    <button class="btn">Contact me</button>
+                    <button class="btn"><i class='bx bx-phone gradient'></i>Contact me</button>
                 </div>
             </div>
-            <!-- <div class="hero-img">
-                <img src="./images/astronaut.png" alt="An Astronaut image">
-            </div> -->
-             </section>
-        </main>
+           
+            <img class="astronaut" src="./images/astronaut.png" alt="An Astronaut image">
+
+         </section>
+            <!-- About Section -->
+         <section class="about">
+                <div class="card-info">
+                    <h1 class="gradient">4+</h1>
+                    <p class="purple">Months of Experience</p>
+                </div>
+                <div class="card-info">
+                    <h1 class="gradient">3+</h1>
+                    <p class="blue">Technical Skills</p>
+                </div>
+                <div class="card-info">
+                    <h1 class="gradient">5+</h1>
+                    <p class="purple">Projects</p>
+                </div>
+                <div class="card-info">
+                    <h1 class="gradient">4+</h1>
+                    <p class="blue" >Months of Experience</p>
+                </div>
+         </section>
+     </main>
     
         <footer>
-    
+            <footer class="footer bg-base-200 text-base-content p-10 mt-20 gradient ">
+                <nav>
+                  <h6 class="footer-title">Services</h6>
+                  <a class="link link-hover">Branding</a>
+                  <a class="link link-hover">Design</a>
+                  <a class="link link-hover">Marketing</a>
+                  <a class="link link-hover">Advertisement</a>
+                </nav>
+                <nav>
+                  <h6 class="footer-title">Company</h6>
+                  <a class="link link-hover">About us</a>
+                  <a class="link link-hover">Contact</a>
+                  <a class="link link-hover">Jobs</a>
+                  <a class="link link-hover">Press kit</a>
+                </nav>
+                <nav>
+                  <h6 class="footer-title">Legal</h6>
+                  <a class="link link-hover">Terms of use</a>
+                  <a class="link link-hover">Privacy policy</a>
+                  <a class="link link-hover">Cookie policy</a>
+                </nav>
+                <form>
+                  <h6 class="footer-title">Newsletter</h6>
+                  <fieldset class="form-control w-80">
+                    <label class="label">
+                      <span class="label-text">Enter your email address</span>
+                    </label>
+                    <div class="join">
+                      <input
+                        type="text"
+                        placeholder="username@site.com"
+                        class="input input-bordered join-item" />
+                      <button class="btn btn-primary join-item">Subscribe</button>
+                    </div>
+                  </fieldset>
+                </form>
+              </footer>
         </footer>
     </section> 
    
