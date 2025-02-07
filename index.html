@@ -8,6 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="media.css">
 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 <body>
     <section class="container">
@@ -21,7 +22,7 @@
                 <h2 class="logo-name gradient"><span class="purple">Tah</span><Span class="blue">Re</Span><span class="purple">Em</span></h2>
             </div>
     
-                <ul class="hidden">
+                <ul class="hidden md:flex">
                     <li><a href="#">About</a></li>
                     <li><a href="#">Skills</a></li>
                     <li><a href="#">Projects</a></li>
@@ -35,8 +36,8 @@
            
         </header>
         <!-- blackhole effect -->
-        <div class="blackhole">
-            <video class="blackhole" loop muted autoplay plays-inline src="./videos/blackhole.mp4"></video>
+        <div class="blackhole hidden md:flex">
+            <video class="blackhole" loading="lazy" loop muted autoplay plays-inline loading="lazy" src="./videos/blackhole.mp4"></video>
         </div>
         <!-- Main section -->
      <main>
@@ -50,7 +51,7 @@
                 </div>
             </div>
            
-            <img class="astronaut" src="./images/astronaut.png" alt="An Astronaut image">
+            <img class="astronaut" loading="lazy" src="./images/astronaut.png" alt="An Astronaut image">
 
          </section>
             <!-- About Section -->
